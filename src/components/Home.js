@@ -26,6 +26,11 @@ class Home extends Component {
     this.setState({ [e.target.name]: e.target.value })
   }
 
+  onSubmit = (e) => {
+    e.preventDefault()
+    const newId = uuid()
+  }
+
   render() {
     return (
       <div>
