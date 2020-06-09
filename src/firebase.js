@@ -2,7 +2,7 @@ import firebase from 'firebase/app'
 import 'firebase/database'
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyD67i8zNfwadofc60nVsRZ4pjz-U1wgxpw',
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: 'markdown-bba9a.firebaseapp.com',
   databaseURL: 'https://markdown-bba9a.firebaseio.com',
   projectId: 'markdown-bba9a',
