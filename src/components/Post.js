@@ -6,6 +6,9 @@ import ReactMarkdown from 'react-markdown'
 class Post extends Component {
   constructor(props) {
     super(props)
+
+    this.titleRef = React.createRef()
+    this.bodyRef = React.createRef()
   }
 
   render() {
