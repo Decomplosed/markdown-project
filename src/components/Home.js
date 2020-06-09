@@ -69,6 +69,7 @@ class Home extends Component {
             <div className='mt-4 mb-4' key={post.key}>
               <Link to={`/post/${post.key}`}>
                 <h2>{post.title}</h2>
+                <hr />
               </Link>
             </div>
           ))}
