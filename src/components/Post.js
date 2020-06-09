@@ -10,6 +10,10 @@ class Post extends Component {
     this.titleRef = React.createRef()
     this.bodyRef = React.createRef()
     this.postFBRef = db.ref(`posts/${this.props.match.params.postId}`)
+
+    this.state = {
+      mdBody: '',
+    }
   }
 
   render() {
