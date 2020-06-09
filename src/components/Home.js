@@ -29,6 +29,8 @@ class Home extends Component {
   onSubmit = (e) => {
     e.preventDefault()
     const newId = uuid()
+
+    if(this.state.title === '') return
   }
 
   render() {
