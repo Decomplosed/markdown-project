@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import db from '../firebase'
+import { Link } from 'react-router-dom'
 
 class Home extends Component {
   render() {
