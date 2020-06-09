@@ -40,6 +40,7 @@ class Home extends Component {
       .then((res) => {
         this.props.history.push(`/post/${newId}`)
       })
+      .catch((err) => console.log(err))
   }
 
   render() {
