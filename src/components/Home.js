@@ -23,10 +23,21 @@ class Home extends Component {
   }
 
   render() {
-    console.log(this.state.posts)
     return (
       <div>
-        <h1>Home</h1>
+        <h1 className='mt-4 mb-4 text-center'>Create or Edit a Post</h1>
+        <form onSubmit={this.onSubmit}>
+          <div className='input-group mb-3'>
+            <input
+              type='text'
+              name='title'
+              className='form-control'
+              placeholder='Create a post...'
+              value={this.state.title}
+              onChange={this.onChange}
+            />
+          </div>
+        </form>
       </div>
     )
   }
