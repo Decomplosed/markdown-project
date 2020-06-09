@@ -36,6 +36,11 @@ class Home extends Component {
               value={this.state.title}
               onChange={this.onChange}
             />
+            <div className='input-group-append'>
+              <button className='btn btn-success' type='submit'>
+                Create
+              </button>
+            </div>
           </div>
         </form>
       </div>
