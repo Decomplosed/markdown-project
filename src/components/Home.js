@@ -30,7 +30,16 @@ class Home extends Component {
     e.preventDefault()
     const newId = uuid()
 
-    if(this.state.title === '') return
+    if (this.state.title === '') return
+
+    db.ref(`posts/${newId}`)
+      .set({
+        title: this.state.title,
+        body: '',
+      })
+      .then((res) => {
+        this.props.history.push(`/post/${newId}`)
+      })
   }
 
   render() {
