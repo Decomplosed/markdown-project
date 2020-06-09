@@ -2,7 +2,11 @@ import React, { Component } from 'react'
 
 class Post extends Component {
   render() {
-    return <div></div>
+    return (
+      <div>
+        <h1>Post Page</h1>
+      </div>
+    )
   }
 }
 
