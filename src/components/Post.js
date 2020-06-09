@@ -4,6 +4,10 @@ import db from '../firebase'
 import ReactMarkdown from 'react-markdown'
 
 class Post extends Component {
+  constructor(props) {
+    super(props)
+  }
+
   render() {
     return (
       <div>
