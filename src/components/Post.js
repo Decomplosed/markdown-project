@@ -20,7 +20,8 @@ class Post extends Component {
     this.postFBRef.on('value', (snapshot) => {
       if (!snapshot.val()) return
 
-      this.titleRef.current.value = snapshot.val().title
+      this.titleRef.current &&
+        (this.titleRef.current.value = snapshot.val().title)
       this.bodyRef.current.value = snapshot.val().body
       this.setState({
         mdBody: snapshot.val().body,
