@@ -44,7 +44,10 @@ class Post extends Component {
       <>
         <div className='row'>
           <div className='col col-sm-12 mt-2'>
-            <Link to='/'>Home</Link>
+            <Link to='/' className='home-link'>
+              <i class='fas fa-home'></i>
+              Home
+            </Link>
           </div>
           <div className='col col-sm-12'>
             <input
