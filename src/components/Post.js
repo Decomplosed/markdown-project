@@ -17,11 +17,14 @@ class Post extends Component {
   }
 
   componentDidMount() {
-    this.postFBRef.on('value', snapshot => {
-      if(!snapshot.val()) return
+    this.postFBRef.on('value', (snapshot) => {
+      if (!snapshot.val()) return
 
       this.titleRef.current.value = snapshot.val().title
       this.bodyRef.current.value = snapshot.val().body
+      this.setState({
+        mdBody: snapshot.val().body,
+      })
     })
   }
 
