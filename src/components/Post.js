@@ -45,7 +45,19 @@ class Post extends Component {
             />
           </div>
         </div>
-      </div>
+        <div className='row'>
+          <div className='col col-sm-6'>
+            <textarea
+              className='form-control'
+              placeholder='Post body...'
+              ref={this.bodyRef}
+              type='text'
+              onChange={this.onChange}
+              row={30}
+            />
+          </div>
+        </div>
+      </>
     )
   }
 }
