@@ -22,7 +22,7 @@ class Post extends Component {
 
       this.titleRef.current &&
         (this.titleRef.current.value = snapshot.val().title)
-      this.bodyRef.current.value = snapshot.val().body
+      this.bodyRef.current && (this.bodyRef.current.value = snapshot.val().body)
       this.setState({
         mdBody: snapshot.val().body,
       })
