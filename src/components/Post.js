@@ -56,6 +56,9 @@ class Post extends Component {
               row={30}
             />
           </div>
+          <div className='col col-sm-6'>
+            <ReactMarkdown source={this.state.mdBody} />
+          </div>
         </div>
       </>
     )
