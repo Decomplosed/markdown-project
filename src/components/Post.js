@@ -43,7 +43,7 @@ class Post extends Component {
     return (
       <>
         <div className='row'>
-          <div className='col col-sm-12'>
+          <div className='col col-sm-12 mt-2'>
             <Link to='/'>Home</Link>
           </div>
           <div className='col col-sm-12'>
