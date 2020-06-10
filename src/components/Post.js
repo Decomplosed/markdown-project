@@ -16,6 +16,12 @@ class Post extends Component {
     }
   }
 
+  componentDidMount() {
+    this.postFBRef.on('value', snapshot => {
+      if(!snapshot.val()) return
+    })
+  }
+
   render() {
     return (
       <div>
