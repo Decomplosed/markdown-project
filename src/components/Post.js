@@ -30,8 +30,19 @@ class Post extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Post Page</h1>
+      <div className='row'>
+        <div className='col col-sm-12'>
+          <Link to='/'>Home</Link>
+          <div className='col col-sm-12'>
+            <input
+              className='post-title-input'
+              type='text'
+              ref={this.titleRef}
+              placeholder='Title'
+              onChange={this.onChange}
+            />
+          </div>
+        </div>
       </div>
     )
   }
