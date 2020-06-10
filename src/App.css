@@ -21,3 +21,14 @@
 .post-title-input:focus {
   border-bottom: 1px solid #28a745;
 }
+
+.markdown-preview {
+  height: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #28a745;
+}
+
+.markdown-preview img {
+  max-width: 100%;
+}
