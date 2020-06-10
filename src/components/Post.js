@@ -64,7 +64,7 @@ class Post extends Component {
               ref={this.bodyRef}
               type='text'
               onChange={this.onChange}
-              row={30}
+              rows={30}
             />
           </div>
           <div className='col col-sm-6'>
