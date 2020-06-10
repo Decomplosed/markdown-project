@@ -4,7 +4,7 @@
 
 .post-link:hover {
   text-decoration: none;
-  color: #28ab22;
+  color: #252824;
 }
 
 .post-title-input {
@@ -16,6 +16,7 @@
   min-width: 50%;
   text-align: center;
   margin: 25px auto;
+  color: #28a745;
 }
 
 .post-title-input:focus {
