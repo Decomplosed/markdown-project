@@ -28,6 +28,16 @@ class Post extends Component {
     })
   }
 
+  onChange = () => {
+    this.postFBRef
+      .set({
+        title: this.titleRef.current.value,
+        body: this.bodyRef.current.value,
+      })
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err))
+  }
+
   render() {
     return (
       <>
