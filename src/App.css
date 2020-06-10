@@ -6,3 +6,18 @@
   text-decoration: none;
   color: #28ab22;
 }
+
+.post-title-input {
+  display: block;
+  border: none;
+  outline: none;
+  font-size: 3rem;
+  max-width: 100%;
+  min-width: 50%;
+  text-align: center;
+  margin: 45px auto;
+}
+
+.post-title-input:focus {
+  border-bottom: 1px solid #28a745;
+}
