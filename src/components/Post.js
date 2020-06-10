@@ -30,9 +30,11 @@ class Post extends Component {
 
   render() {
     return (
-      <div className='row'>
-        <div className='col col-sm-12'>
-          <Link to='/'>Home</Link>
+      <>
+        <div className='row'>
+          <div className='col col-sm-12'>
+            <Link to='/'>Home</Link>
+          </div>
           <div className='col col-sm-12'>
             <input
               className='post-title-input'
